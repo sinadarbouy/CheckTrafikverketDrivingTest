@@ -2,6 +2,10 @@
 
 This Python script allows users to check for available driving test sessions from the Swedish Transport Administration’s booking website using their social security number, a specified date, and license ID. The script requires manual login due to CAPTCHA or BankID verification.
 
+### Captcha Handling (Experimental)
+
+The script includes an experimental and just-for-fun feature for handling CAPTCHA, located in the images and captcha.py files. This part is not guaranteed to work and may require manual intervention. It is intended for educational purposes only and should not be relied upon for automated CAPTCHA solving.
+
 ### Features
 
 - Automatic login: Automates the login process to the booking site, handling cookies and session management.
@@ -38,6 +42,7 @@ The script consists of several functions:
 - is_session_valid(): Verifies if the current session is still valid.
 - check_date(cookies, social_security_number, date_threshold, licence_id): Checks available exam dates against the user’s criteria.
 - main(): Main function that orchestrates the checking process, managing login, and re-login as needed.
+
 
 ### Notes
 
